@@ -1,4 +1,4 @@
-# :bowtie: :smile: :laughing: irc_api 
+#   :smile: :speaking_head: :laughing: irc_api 
 
 
 The API irc_api, generated with NestJs, supports manipulation WS through Redis.
