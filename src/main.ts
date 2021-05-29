@@ -10,7 +10,11 @@ async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
   app.useWebSocketAdapter(new RedisIoAdapter(app));
   const port = parseInt(process.env.SERVER_PORT);
-  await app.listen(port);
+  
+  await app.listen(port, () => {
+    console.log('[SERVER] listening at port', port)
+});
+
 }
 
 bootstrap();
